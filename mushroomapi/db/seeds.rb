@@ -24,7 +24,7 @@ mushrooms =  [
             sporePrint: ["white"],
             ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-0.3.5&s=bfd847c9e103c14b5aa2393003ef7131&auto=format&fit=crop&w=634&q=80"
     },
     {
         latin_name: "Agaricus arvensis",
@@ -42,7 +42,7 @@ mushrooms =  [
           scoreprint: ["brown", "black-brown"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "https://cdn.pixabay.com/photo/2016/03/13/16/13/horse-mushroom-1254040_960_720.jpg"
     },
     {
         latin_name: "Agaricus campestris",
@@ -60,7 +60,7 @@ mushrooms =  [
           scoreprint: ["brown"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "http://www.fichasmicologicas.com/typo3temp/pics/5cf3e53469.jpg"
     },
     {
         latin_name: "Armillaria mellea",
@@ -78,7 +78,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["parasitic"],
         },
-        img_url: ""
+        img_url: "https://cdn.pixabay.com/photo/2017/10/08/19/44/armillaria-mellea-2831291_960_720.jpg"
     },
     {
         latin_name: "Flammulina velutipes",
@@ -96,11 +96,11 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "http://www.midwestmycology.org/images/Species%20pictures/Flammulina%20velutipes/On%20page/Flammulina%20Velutipes%203%20cluster.jpg"
     },
     {
         latin_name: "Grifola frondosa",
-        common_name: ["Hen-of-the-woods", "Ram's head", "Sheep's head"],
+        common_name: ["Maitake mushroom", "Hen-of-the-woods", "Ram's head", "Sheep's head"],
         confused_with: ["Laetiporus sulphureus"],
         region: ["North America", "Japan"],
         habitat: "Grows on living hardwoods (especially oaks) and occasionally on conifers.",
@@ -114,7 +114,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["parasitic"],
         },
-        img_url: ""
+        img_url: "https://c1.staticflickr.com/8/7152/6486237693_f4ae4f432b_b.jpg"
     },
     {
         latin_name: "Gyromitra esculenta",
@@ -132,7 +132,7 @@ mushrooms =  [
           scoreprint: ["yellow", "buff"],
           ecology: ["saprotrophic", "mycorrihizal"],
         },
-        img_url: ""
+        img_url: "https://c1.staticflickr.com/4/3695/8915950671_5e91f53f98_b.jpg"
     },
     {
         latin_name: "Morchella esculenta",
@@ -150,7 +150,7 @@ mushrooms =  [
           scoreprint: ["yellow", "cream"],
           ecology: ["mycorrhizal", "saprotrophic"],
         },
-        img_url: ""
+        img_url: "https://thumbs.dreamstime.com/b/common-morel-fungus-morchella-esculenta-two-forest-41176798.jpg"
     },
     {
         latin_name: "Pleurotus ostreatus",
@@ -168,7 +168,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "http://www.mykoweb.com/CAF/photos/large/Pleurotus_ostreatus%28fs-03%29.jpg"
     },
     {
         latin_name: "Pluteus cervinus",
@@ -186,7 +186,7 @@ mushrooms =  [
           scoreprint: ["salmon", "reddish-brown"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "https://www.mushroomexpert.com/images/kuo4/pluteus_cervinus_13.jpg"
     },
     {
         latin_name: "Tremella fuciformis",
@@ -204,7 +204,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "http://www.indianamushrooms.com/images/Tremella_fuciformis_88.JPG"
     },
     {
         latin_name: "Volvariella volvacea",
@@ -222,7 +222,7 @@ mushrooms =  [
           scoreprint: ["salmon", "pink"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "https://files.shroomery.org/files/05-18/532106279-cluster2.jpg"
     },
     {
         latin_name: "Lentinula edodes",
@@ -240,7 +240,7 @@ mushrooms =  [
           scoreprint: ["white", "buff"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "https://www.boletsdesoca.com/wp-content/uploads/2014/02/xiitake_donko_cultiu_01.jpg"
     },
     {
         latin_name: "Amanita phalloides",
@@ -258,7 +258,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "http://www.mykoweb.com/CAF/photos/large/Amanita_phalloides_fs-09.jpg"
     },
     {
         latin_name: "Cantharellus cibarius",
@@ -276,7 +276,7 @@ mushrooms =  [
           scoreprint: ["yellow", "cream"],
           ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "https://i.pinimg.com/originals/00/1c/bb/001cbb07ade180ad357d5f3d044ddb2d.jpg"
     },
     {
         latin_name: "Hericium erinaceus",
@@ -294,7 +294,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["parasitic"],
         },
-        img_url: ""
+        img_url: "https://www.mushroomexpert.com/images/kuo2/hericium_erinaceus_01.jpg"
     },
     {
         latin_name: "Lactarius vinaceorufescens",
@@ -312,7 +312,7 @@ mushrooms =  [
           scoreprint: ["white", "yellow"],
           ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "http://farm4.static.flickr.com/3065/2756870427_8500394f03.jpg"
     },
     {
         latin_name: "Amanita regalis",
@@ -330,7 +330,7 @@ mushrooms =  [
           scoreprint: ["white"],
           ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "https://i.pinimg.com/originals/74/30/8f/74308f53201ff3126452371ad3cff864.jpg"
     },
     {
         latin_name: "Lactarius deliciosus",
@@ -348,7 +348,7 @@ mushrooms =  [
           scoreprint: ["tan"],
           ecology: ["mycorrhizal"],
         },
-        img_url: ""
+        img_url: "http://www.mykoweb.com/CAF/photos/large/Lactarius_deliciosus_fs-04.jpg"
     },
     {
         latin_name: "Coprinus comatus",
@@ -366,7 +366,7 @@ mushrooms =  [
           scoreprint: ["black"],
           ecology: ["saprotrophic"],
         },
-        img_url: ""
+        img_url: "http://www.mykoweb.com/CAF/photos/large/Coprinus_comatus_fs-07.jpg"
     }
 ]
 

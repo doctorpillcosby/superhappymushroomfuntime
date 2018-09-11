@@ -46,6 +46,6 @@ class MushroomsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def mushroom_params
-      params.require(:mushroom).permit(:latin_name, :string)
+      params.require(:mushroom).permit(:latin_name, :common_name, :confused_with, :habitat, :region, :fairy_rings, :characteristics)
     end
 end

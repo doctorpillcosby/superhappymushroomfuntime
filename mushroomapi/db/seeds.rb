@@ -23,8 +23,8 @@ mushrooms =  [
             hymenium: ["free"],
             sporePrint: ["white"],
             ecology: ["mycorrhizal"],
-            img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Agaricus arvensis",
@@ -41,8 +41,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["brown", "black-brown"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Agaricus campestris",
@@ -59,8 +59,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["brown"],
           ecology: ["saprotrophic"],
-            img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Armillaria mellea",
@@ -77,8 +77,8 @@ mushrooms =  [
             hymenium: ["adnate", "subdecurrent"],
           scoreprint: ["white"],
           ecology: ["parasitic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Flammulina velutipes",
@@ -95,8 +95,8 @@ mushrooms =  [
             hymenium: ["adnexed"],
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Grifola frondosa",
@@ -113,8 +113,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["white"],
           ecology: ["parasitic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Gyromitra esculenta",
@@ -131,8 +131,8 @@ mushrooms =  [
             hymenium: ["irregular"],
           scoreprint: ["yellow", "buff"],
           ecology: ["saprotrophic", "mycorrihizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Morchella esculenta",
@@ -149,8 +149,8 @@ mushrooms =  [
             hymenium: ["irregular"],
           scoreprint: ["yellow", "cream"],
           ecology: ["mycorrhizal", "saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Pleurotus ostreatus",
@@ -167,8 +167,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Pluteus cervinus",
@@ -185,8 +185,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["salmon", "reddish-brown"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Tremella fuciformis",
@@ -203,8 +203,8 @@ mushrooms =  [
             hymenium: [],
           scoreprint: ["white"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Volvariella volvacea",
@@ -221,8 +221,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["salmon", "pink"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Lentinula edodes",
@@ -239,8 +239,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["white", "buff"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Amanita phalloides",
@@ -257,8 +257,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["white"],
           ecology: ["mycorrhizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Cantharellus cibarius",
@@ -275,8 +275,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["yellow", "cream"],
           ecology: ["mycorrhizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Hericium erinaceus",
@@ -293,8 +293,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["white"],
           ecology: ["parasitic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Lactarius vinaceorufescens",
@@ -311,8 +311,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["white", "yellow"],
           ecology: ["mycorrhizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Amanita regalis",
@@ -329,8 +329,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["white"],
           ecology: ["mycorrhizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Lactarius deliciosus",
@@ -347,8 +347,8 @@ mushrooms =  [
             hymenium: ["decurrent"],
           scoreprint: ["tan"],
           ecology: ["mycorrhizal"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     },
     {
         latin_name: "Coprinus comatus",
@@ -365,8 +365,8 @@ mushrooms =  [
             hymenium: ["free"],
           scoreprint: ["black"],
           ecology: ["saprotrophic"],
-          img_url: ""
-        }
+        },
+        img_url: ""
     }
 ]
 

@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log(mushroom.common_name)
     mushroomSpan.innerHTML = `
-      <h3>${mushroom.latin_name}
+      <img src=${mushroom.img_url} class='photo'/>
+      <h2 class="margin">${mushroom.latin_name}
         <button>edit</button>
-      </h3>
-
+      </h2>
       <p>${mushroom.common_name}</p>
     `
     mushroomSpan.dataset.id = mushroom.id;

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   let mushroomToEdit = {}
+
   const endPoint = 'http://localhost:3000/mushrooms';
   const mushroomCollection = document.getElementById('mushroom-collection');
   const mushroomForm = document.querySelector("#new-mushroom-form")
@@ -19,10 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let urlInput = document.querySelector('#mushroom-url')
   let confusedWithInput = document.querySelector('#mushroom-confused-with')
   let inputs = document.querySelectorAll("input")
-  console.log(inputs);
-  inputs.forEach((input) => {
-    input.value = mushroomtToEdit[input.name];
-  })
+
+
+
+
+
   //get all of the mushrooms using fetch
   fetch(endPoint)
   .then(res => res.json())
@@ -72,34 +74,55 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(mushroom => mushroomCollection.append(mushroomMaker(mushroom)))
   })
 
+//EDIT BUTTON
   document.addEventListener('click', (event) => {
+
     if(event.target.className === "edit-button") {
-      const mushroomId = event.target.parentNode.parentNode.dataset.id;
-      let mushroomAttributeArray = event.target.parentNode.parentNode.children
-      console.log(mushroomAttributeArray)
+      // console.log(event.target.parentNode);
+      event.target.parentNode.querySelectorAll("p").forEach((pTag) => {
+        console.log(pTag)
+        mushroomToEdit[pTag.className] = pTag.innerText
+      })
 
-      mushroomAttributeArray.forEach((mushroom) => {
+      event.target.parentNode.querySelectorAll("h2").forEach((hTag) => {
+        mushroomToEdit[hTag.className] = hTag.innerText
+      })
 
-        console.log(mushroom)
+
+
+
+
+      inputs.forEach((input, idx) => {
+        console.log(idx)
+        let key = Object.keys(mushroomToEdit)[idx]
+        console.log(mushroomToEdit[key])
+        input.value = mushroomToEdit[key]
 
       })
 
-      // console.log(event.target.parentNode.parentNode.children[4]);
-      // l
-      // characteristics: {psychoactive: psychoactiveInput.value,
-      //   poisonous: poisonousInput.value,
-      //   deadly: deadlyInput.value,
-      //   cap: capInput.value,
-      //   hymenium: hymeniumInput.value,
-      //   sporePrint: sporePrintInput.value,
-      //   ecology: ecologyInput.value},
-      // img_url: urlInput.value,
+      return mushroomToEdit
 
-      console.log(event.target.parentNode.parentNode.children[3].innerHTML);
-    }
+      // const mushroomId = event.target.parentNode.parentNode.dataset.id;
+      //  let mushroomCardImage = event.target.parentNode.children[0]
+      //  let mushroomCardLatinName = event.target.parentNode.children[1]
+      //  let mushroomCardCommonName = event.target.parentNode.children[2]
+      //  let mushroomCardConfusedWith = event.target.parentNode.children[4]
+      //  let musroomCardRegion = event.target.parentNode.children[5]
+      //  let mushroomCardHabitat = event.target.parentNode.children[6]
+      //  let mushroomCardFairyRing = event.target.parentNode.children[7]
+      //  let mushroomCardPsychactive = event.target.parentNode.children[8]
+      //  let mushroomCardPoisonous = event.target.parentNode.children[9]
+      //  let mushroomCardDeadly = event.target.parentNode.children[10]
+      //  let mushroomCardCap = event.target.parentNode.children[11]
+      //  let mushroomCardHymenium = event.target.parentNode.children[12]
+      //  let mushroomCardSporPrint = event.target.parentNode.children[13]
+      //  let mushroomCardEcology = event.target.parentNode.children[14]
+     }
+     })
 
 
-  })
+
+
 
 
   //function that creates a mushroom
@@ -109,21 +132,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mushroomSpan.innerHTML = `
       <img src=${mushroom.img_url} class='photo'/>
-      <h2 class="margin">${mushroom.latin_name}
-        <button class="edit-button">edit</button>
-      </h2>
-      <p>${mushroom.common_name}</p>
-      <p hidden>${mushroom.confused_with}</p>
-      <p hidden>${mushroom.region}</p>
-      <p hidden>${mushroom.habitat}</p>
-      <p hidden>${mushroom.fairy_rings}</p>
-      <p hidden>${mushroom.characteristics.psychoactive}</p>
-      <p hidden>${mushroom.characteristics.poisonous}</p>
-      <p hidden>${mushroom.characteristics.deadly}</p>
-      <p hidden>${mushroom.characteristics.cap}</p>
-      <p hidden>${mushroom.characteristics.hymenium}</p>
-      <p hidden>${mushroom.characteristics.sporePrint}</p>
-      <p hidden>${mushroom.characteristics.ecology}</p>
+      <h2 class="latin_name">${mushroom.latin_name}</h2>
+      <p class= "common_name">${mushroom.common_name}</p>
+      <button class="edit-button">edit</button>
+      <p class="confused_with" hidden>${mushroom.confused_with}</p>
+      <p class="region" hidden>${mushroom.region}</p>
+      <p class="habitat" hidden>${mushroom.habitat}</p>
+      <p hidden class="fairy_rings">${mushroom.fairy_rings}</p>
+      <p hidden class= "psychoactive">${mushroom.characteristics.psychoactive}</p>
+      <p hidden class= "poisonous">${mushroom.characteristics.poisonous}</p>
+      <p hidden class= "deadly">${mushroom.characteristics.deadly}</p>
+      <p hidden class= "cap">${mushroom.characteristics.cap}</p>
+      <p hidden class= "hymenium">${mushroom.characteristics.hymenium}</p>
+      <p hidden class= "spore_print">${mushroom.characteristics.sporePrint}</p>
+      <p hidden class= "ecology">${mushroom.characteristics.ecology}</p>
     `
     mushroomSpan.dataset.id = mushroom.id;
     return mushroomSpan;

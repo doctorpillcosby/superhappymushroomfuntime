@@ -15,7 +15,9 @@ class MushroomsController < ApplicationController
 
   # POST /mushrooms
   def create
-    @mushroom = Mushroom.new(mushroom_params)
+    @mushroom = Mushroom.new(common_name: params[:common_name], latin_name: params[:latin_name], confused_with: params[:confused_with],region: params[:region], habitat: params[:habitat], fairy_rings: params[:fairy_rings], characteristics: params[:characteristics], img_url: params[:img_url])
+
+    @mushroom.to_s
 
     if @mushroom.save
       render json: @mushroom, status: :created, location: @mushroom

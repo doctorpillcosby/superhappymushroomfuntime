@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
         region: regionInput.value,
         habitat: habitatInput.value,
         fairy_rings: habitatInput.value,
-        characteristics: {
-          psychoactive: psychoactiveInput.value,
+        characteristics: {psychoactive: psychoactiveInput.value,
           poisonous: poisonousInput.value,
           deadly: deadlyInput.value,
           cap: capInput.value,
           hymenium: hymeniumInput.value,
           sporePrint: sporePrintInput.value,
-          ecology: ecologyInput.value,
-        }
+          ecology: ecologyInput.value},
+        img_url: urlInput.value,
+
 
 
       }),

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+  let mushroomToEdit = {}
   const endPoint = 'http://localhost:3000/mushrooms';
   const mushroomCollection = document.getElementById('mushroom-collection');
   const mushroomForm = document.querySelector("#new-mushroom-form")
@@ -18,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let ecologyInput = document.querySelector('#mushroom-ecology')
   let urlInput = document.querySelector('#mushroom-url')
   let confusedWithInput = document.querySelector('#mushroom-confused-with')
-
+  let inputs = document.querySelectorAll("input")
+  console.log(inputs);
+  inputs.forEach((input) => {
+    input.value = mushroomtToEdit[input.name];
+  })
   //get all of the mushrooms using fetch
   fetch(endPoint)
   .then(res => res.json())
@@ -71,14 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (event) => {
     if(event.target.className === "edit-button") {
       const mushroomId = event.target.parentNode.parentNode.dataset.id;
+      let mushroomAttributeArray = event.target.parentNode.parentNode.children
+      console.log(mushroomAttributeArray)
+
+      mushroomAttributeArray.forEach((mushroom) => {
+
+        console.log(mushroom)
+
+      })
 
       // console.log(event.target.parentNode.parentNode.children[4]);
-      latinNameInput.value = event.target.parentNode.parentNode.children[3].innerHTML;
-      commonNameInput.value = event.target.parentNode.parentNode.children[2].innerHTML;
-      confusedWithInput.value = event.target.parentNode.parentNode.children[6].innerHTML;
-      regionInput.value = event.target.parentNode.parentNode.children[4].innerHTML;
-      habitatInput.value
-      fairyRingInput.value
+      // l
       // characteristics: {psychoactive: psychoactiveInput.value,
       //   poisonous: poisonousInput.value,
       //   deadly: deadlyInput.value,
@@ -87,6 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
       //   sporePrint: sporePrintInput.value,
       //   ecology: ecologyInput.value},
       // img_url: urlInput.value,
+
+      console.log(event.target.parentNode.parentNode.children[3].innerHTML);
     }
 
 

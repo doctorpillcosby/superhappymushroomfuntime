@@ -117,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
       //  let mushroomCardHymenium = event.target.parentNode.children[12]
       //  let mushroomCardSporPrint = event.target.parentNode.children[13]
       //  let mushroomCardEcology = event.target.parentNode.children[14]
+      console.log(mushroomCardLatinName.value )
+      latinNameInput.innerText = mushroomCardLatinName.value
      }
      })
 
@@ -147,6 +149,33 @@ document.addEventListener('DOMContentLoaded', () => {
       <p hidden class= "spore_print">${mushroom.characteristics.sporePrint}</p>
       <p hidden class= "ecology">${mushroom.characteristics.ecology}</p>
     `
+
+    // mushroomSpan.innerHTML = `
+    //
+    //
+    // <div class="card" style="width: 18rem;">
+    //   <img class="card-img-top photo" src=${mushroom.img_url} alt="Card image cap">
+    //   <div class="card-body">
+    //     <h5 class="card-title latin_name">${mushroom.latin_name}</h5>
+    //     <p class="card-text common_name">${mushroom.common_name}</p>
+    //     <a href="#" class="btn btn-primary edit-button">edit</a>
+    //   </div>
+    //   <div class="hidden">
+    //     <p class="card-text confused_with">${mushroom.confused_with}</p>
+    //     <p class="card-text region">${mushroom.region}</p>
+    //     <p class="card-text habitat">${mushroom.habitat}</p>
+    //     <p class="card-text fairy_rings">${mushroom.fairy_rings}</p>
+    //     <p class= "card-text psychoactive">${mushroom.characteristics.psychoactive}</p>
+    //     <p class= "card-text poisonous">${mushroom.characteristics.poisonous}</p>
+    //     <p class= "card-text deadly">${mushroom.characteristics.deadly}</p>
+    //     <p class= "card-text cap">${mushroom.characteristics.cap}</p>
+    //     <p class= "card-text hymenium">${mushroom.characteristics.hymenium}</p>
+    //     <p class= "card-text spore_print">${mushroom.characteristics.sporePrint}</p>
+    //     <p class= "card-text ecology">${mushroom.characteristics.ecology}</p>
+    //   </div>
+    // </div>
+    // `
+
     mushroomSpan.dataset.id = mushroom.id;
     return mushroomSpan;
   }

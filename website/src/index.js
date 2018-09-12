@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'Content-Type': 'application/json'
         }
       })
-      .then(res => console.log(res.json()))
+      .then(res => res.json())
+      .then(mushroom => mushroomCollection.append(mushroomMaker(mushroom)))
 
 
 

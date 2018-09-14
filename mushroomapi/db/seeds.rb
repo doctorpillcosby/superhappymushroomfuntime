@@ -35,11 +35,11 @@ mushrooms =  [
         fairy_rings: true,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["convex"],
             hymenium: ["free"],
-          scoreprint: ["brown", "black-brown"],
+          sporePrint: ["brown", "black-brown"],
           ecology: ["saprotrophic"],
         },
         img_url: "https://cdn.pixabay.com/photo/2016/03/13/16/13/horse-mushroom-1254040_960_720.jpg"
@@ -53,11 +53,11 @@ mushrooms =  [
         fairy_rings: true,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["convex", "flat"],
             hymenium: ["free"],
-          scoreprint: ["brown"],
+          sporePrint: ["brown"],
           ecology: ["saprotrophic"],
         },
         img_url: "http://www.fichasmicologicas.com/typo3temp/pics/5cf3e53469.jpg"
@@ -71,11 +71,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["convex", "flat"],
             hymenium: ["adnate", "subdecurrent"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["parasitic"],
         },
         img_url: "https://cdn.pixabay.com/photo/2017/10/08/19/44/armillaria-mellea-2831291_960_720.jpg"
@@ -89,11 +89,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["convex"],
             hymenium: ["adnexed"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["saprotrophic"],
         },
         img_url: "http://www.midwestmycology.org/images/Species%20pictures/Flammulina%20velutipes/On%20page/Flammulina%20Velutipes%203%20cluster.jpg"
@@ -107,11 +107,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["offset", "indistinct"],
             hymenium: ["decurrent"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["parasitic"],
         },
         img_url: "https://c1.staticflickr.com/8/7152/6486237693_f4ae4f432b_b.jpg"
@@ -125,11 +125,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: true,
             cap: ["convex"],
             hymenium: ["irregular"],
-          scoreprint: ["yellow", "buff"],
+          sporePrint: ["yellow", "buff"],
           ecology: ["saprotrophic", "mycorrihizal"],
         },
         img_url: "https://c1.staticflickr.com/4/3695/8915950671_5e91f53f98_b.jpg"
@@ -143,11 +143,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["conical", "convex"],
             hymenium: ["irregular"],
-          scoreprint: ["yellow", "cream"],
+          sporePrint: ["yellow", "cream"],
           ecology: ["mycorrhizal", "saprotrophic"],
         },
         img_url: "https://thumbs.dreamstime.com/b/common-morel-fungus-morchella-esculenta-two-forest-41176798.jpg"
@@ -161,11 +161,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["offset"],
             hymenium: ["decurrent"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["saprotrophic"],
         },
         img_url: "http://www.mykoweb.com/CAF/photos/large/Pleurotus_ostreatus%28fs-03%29.jpg"
@@ -179,11 +179,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["flat"],
             hymenium: ["free"],
-          scoreprint: ["salmon", "reddish-brown"],
+          sporePrint: ["salmon", "reddish-brown"],
           ecology: ["saprotrophic"],
         },
         img_url: "https://www.mushroomexpert.com/images/kuo4/pluteus_cervinus_13.jpg"
@@ -197,11 +197,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: [],
             hymenium: [],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["saprotrophic"],
         },
         img_url: "http://www.indianamushrooms.com/images/Tremella_fuciformis_88.JPG"
@@ -215,11 +215,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["conical", "umbonate"],
             hymenium: ["free"],
-          scoreprint: ["salmon", "pink"],
+          sporePrint: ["salmon", "pink"],
           ecology: ["saprotrophic"],
         },
         img_url: "https://files.shroomery.org/files/05-18/532106279-cluster2.jpg"
@@ -233,11 +233,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["convex"],
             hymenium: ["free"],
-          scoreprint: ["white", "buff"],
+          sporePrint: ["white", "buff"],
           ecology: ["saprotrophic"],
         },
         img_url: "https://www.boletsdesoca.com/wp-content/uploads/2014/02/xiitake_donko_cultiu_01.jpg"
@@ -251,11 +251,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: true,
+            poisonous: true,
             deadly: true,
             cap: ["convex", "flat"],
             hymenium: ["free"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["mycorrhizal"],
         },
         img_url: "http://www.mykoweb.com/CAF/photos/large/Amanita_phalloides_fs-09.jpg"
@@ -269,11 +269,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["infundibuliform"],
             hymenium: ["decurrent"],
-          scoreprint: ["yellow", "cream"],
+          sporePrint: ["yellow", "cream"],
           ecology: ["mycorrhizal"],
         },
         img_url: "https://i.pinimg.com/originals/00/1c/bb/001cbb07ade180ad357d5f3d044ddb2d.jpg"
@@ -287,11 +287,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: [],
             hymenium: ["decurrent"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["parasitic"],
         },
         img_url: "https://www.mushroomexpert.com/images/kuo2/hericium_erinaceus_01.jpg"
@@ -305,11 +305,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: true,
+            poisonous: true,
             deadly: false,
             cap: ["depressed"],
             hymenium: ["decurrent"],
-          scoreprint: ["white", "yellow"],
+          sporePrint: ["white", "yellow"],
           ecology: ["mycorrhizal"],
         },
         img_url: "http://farm4.static.flickr.com/3065/2756870427_8500394f03.jpg"
@@ -323,11 +323,11 @@ mushrooms =  [
         fairy_rings: true,
         characteristics: {
             psychoactive: false,
-            posionous: true,
+            poisonous: true,
             deadly: false,
             cap: ["convex", "flat"],
             hymenium: ["free"],
-          scoreprint: ["white"],
+          sporePrint: ["white"],
           ecology: ["mycorrhizal"],
         },
         img_url: "https://i.pinimg.com/originals/74/30/8f/74308f53201ff3126452371ad3cff864.jpg"
@@ -341,11 +341,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["depressed"],
             hymenium: ["decurrent"],
-          scoreprint: ["tan"],
+          sporePrint: ["tan"],
           ecology: ["mycorrhizal"],
         },
         img_url: "http://www.mykoweb.com/CAF/photos/large/Lactarius_deliciosus_fs-04.jpg"
@@ -359,11 +359,11 @@ mushrooms =  [
         fairy_rings: false,
         characteristics: {
             psychoactive: false,
-            posionous: false,
+            poisonous: false,
             deadly: false,
             cap: ["conical"],
             hymenium: ["free"],
-          scoreprint: ["black"],
+          sporePrint: ["black"],
           ecology: ["saprotrophic"],
         },
         img_url: "http://www.mykoweb.com/CAF/photos/large/Coprinus_comatus_fs-07.jpg"

@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         confused_with: confusedWithInput.value,
         region: regionInput.value,
         habitat: habitatInput.value,
-        fairy_rings: habitatInput.value,
+        fairy_rings: fairyRingInput.value,
         characteristics: {psychoactive: psychoactiveInput.value,
           poisonous: poisonousInput.value,
           deadly: deadlyInput.value,
@@ -77,48 +77,35 @@ document.addEventListener('DOMContentLoaded', () => {
 //EDIT BUTTON
   document.addEventListener('click', (event) => {
 
-    if(event.target.className === "edit-button") {
+    // event.preventDefault()
+
+    if(event.target.classList.contains("edit-button")) {
       // console.log(event.target.parentNode);
-      event.target.parentNode.querySelectorAll("p").forEach((pTag) => {
-        console.log(pTag)
-        mushroomToEdit[pTag.className] = pTag.innerText
-      })
-
-      event.target.parentNode.querySelectorAll("h2").forEach((hTag) => {
-        mushroomToEdit[hTag.className] = hTag.innerText
-      })
+       let mushroomCardId = event.target.parentNode.dataset.id
 
 
 
+       fetch(`http://localhost:3000/mushrooms/${mushroomCardId}`)
+       .then(res => res.json())
+       .then(mushroom => {
+        commonNameInput.value = mushroom.common_name;
+        latinNameInput.value = mushroom.latin_name;
+        confusedWithInput.value = mushroom.confused_with;
+        regionInput.value = mushroom.region;
+        habitatInput.value = mushroom.habitat;
+        fairyRingInput.value = mushroom.fairy_rings;
+        psychoactiveInput.value = mushroom.characteristics.psychoactive;
+        poisonousInput.value = mushroom.characteristics.poisonous;
+        deadlyInput.value = mushroom.characteristics.deadly;
+        capInput.value = mushroom.characteristics.cap;
+        hymeniumInput.value = mushroom.characteristics.hymenium;
+        sporePrintInput.value = mushroom.characteristics.sporePrint;
+        ecologyInput.value = mushroom.characteristics.ecology;
+        urlInput.value = mushroom.img_url;
+       })
 
 
-      inputs.forEach((input, idx) => {
-        console.log(idx)
-        let key = Object.keys(mushroomToEdit)[idx]
-        console.log(mushroomToEdit[key])
-        input.value = mushroomToEdit[key]
 
-      })
-
-      return mushroomToEdit
-
-      // const mushroomId = event.target.parentNode.parentNode.dataset.id;
-      //  let mushroomCardImage = event.target.parentNode.children[0]
-      //  let mushroomCardLatinName = event.target.parentNode.children[1]
-      //  let mushroomCardCommonName = event.target.parentNode.children[2]
-      //  let mushroomCardConfusedWith = event.target.parentNode.children[4]
-      //  let musroomCardRegion = event.target.parentNode.children[5]
-      //  let mushroomCardHabitat = event.target.parentNode.children[6]
-      //  let mushroomCardFairyRing = event.target.parentNode.children[7]
-      //  let mushroomCardPsychactive = event.target.parentNode.children[8]
-      //  let mushroomCardPoisonous = event.target.parentNode.children[9]
-      //  let mushroomCardDeadly = event.target.parentNode.children[10]
-      //  let mushroomCardCap = event.target.parentNode.children[11]
-      //  let mushroomCardHymenium = event.target.parentNode.children[12]
-      //  let mushroomCardSporPrint = event.target.parentNode.children[13]
-      //  let mushroomCardEcology = event.target.parentNode.children[14]
-      console.log(mushroomCardLatinName.value )
-      latinNameInput.innerText = mushroomCardLatinName.value
      }
      })
 
@@ -158,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //   <div class="card-body">
     //     <h5 class="card-title latin_name">${mushroom.latin_name}</h5>
     //     <p class="card-text common_name">${mushroom.common_name}</p>
-    //     <a href="#" class="btn btn-primary edit-button">edit</a>
+    //     <button class="btn btn-primary edit-button">edit</button>
     //   </div>
     //   <div class="hidden">
     //     <p class="card-text confused_with">${mushroom.confused_with}</p>
